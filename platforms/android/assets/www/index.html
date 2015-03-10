@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link href='http://fonts.googleapis.com/css?family=Lato&#124Merienda' rel='stylesheet' type='text/css'>
+        <link href="open-iconic/font/css/open-iconic.css" type ="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Mobile Framework</title>
+    </head>
+    <body>
+        <header class="apptitle">
+            <h1>Super Awesome App!</h1>
+        </header>
+        
+        <!-- tabbed navigation bar -->
+        <nav class="tabs">
+            <ul>
+                <li class="li-1-3"><a href="#home" id="home" data-role="pagelink" class="activetab"><span class="oi" data-glyph="home" title="home" aria-hidden="true"></span> Home</a></li>
+                <li class="li-1-3"><a href="#location" id="location" data-role="pagelink"><span class="oi" data-glyph="map-marker" title="map-marker" aria-hidden="true"></span> Location</a></li>
+                <li class="li-1-3"><a href="#contacts" id="contacts" data-role="pagelink"><span class="oi" data-glyph="person" title="person" aria-hidden="true"></span> Contacts</a></li>
+            </ul>
+        </nav>
+        
+        <div id="myApp"> <!-- main wrapper div -->
+      
+          <section id="home" data-role="page" class=""> <!-- each "section" is a page, data-role assigns functionality to the page -->
+<!--            <div data-role="content">-->
+                <h2>Home</h2>
+                <p>Welcome to my super awesome app! Want to know where you are? Click on the locations tab and have a lovely map display. Feel like finding a random contact? Click on the contacts tab and get a surprise every time!</p>
+<!--            </div>-->
+          </section>
+
+          <section id="location" data-role="page" class="hidden">
+<!--            <div data-role="content">-->
+                <h2>Location</h2>
+                <div id="output">
+                    <canvas height="300px" width="300px">
+                </div>
+                <p id="foundYou">Please wait while we try to find your location.</p>  
+<!--            </div>-->
+          </section>
+
+          <section id="contacts" data-role="page" class="hidden">
+<!--            <div data-role="content">-->
+                <h2>Contacts</h2>
+              <div id="contactOutput"></div>
+<!--            </div>-->
+          </section>
+  
+        </div>
+        
+        <footer class = "footer">
+            <p>&copy; Sara Carpinone 2015</p>
+        </footer>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

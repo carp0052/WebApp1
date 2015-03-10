@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.carp0052.webapp1" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <name>WebApp1 Carp0052</name>
+    <description>
+        A single HTML file that has three screens inside it, built without jQuery.
+    </description>
+    <author email="carp0052@algonquinlive.com" href="https://github.com/carp0052">
+        Sara Carpinone
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
